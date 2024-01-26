@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #8064A2;
+    --secondary-color: #0096C8;
+    --purple-3:#CCC1DA;
+   --Grey-Lighter:#F8F9FA;
+   --Grey-Hover:#EBEDF0;
+  }
+  .inputStyle {
+    border: 1px solid #8064A2;
+    background-color: #fff;
+    color: #8064A2;
+    padding: 10px 32px;
+    border-radius: 8px;
+  }
+  .form-control {
+    /* or any other border color you prefer */
+    box-shadow: none; 
+    border-radius: 8px;
+    background:var(--Grey-Lighter);
+    border-color: var(--Grey-Hover);/* Remove the box-shadow on hover */
+  }
