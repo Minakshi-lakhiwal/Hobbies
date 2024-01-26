@@ -1,8 +1,16 @@
 import React from "react";
+import { useState } from "react";
 import "./home.css";
 import home1 from "../../assets/home1.png";
 import home2 from "../../assets/Home2.png";
+import { FaLock } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 const Home = () => {
+  const [activeButton, setActiveButton] = useState("signIn");
+
+  const handleButtonClick = (buttonType) => {
+    setActiveButton(buttonType);
+  };
   return (
     <>
       <div className="d-flex justify-content-between">
@@ -22,40 +30,68 @@ const Home = () => {
             promote yourself, your students, products, services or events. Hop
             on your hobbyhorse and enjoy the ride.
           </p>
-          <div className="images">
+          <div className="images d-flex">
             <img src={home1} />
             <img src={home2} />
           </div>
         </div>
-        <div className="right pt-5 mx-5">
-          <div>
-            <button>Sign In</button>
-            <button>Join In</button>
-            <div></div>
-            <div></div>
-            <p></p>
+        <div className="right pt-5 mx-5 col-4">
+          <div className="mb-4">
+            <button
+              className={`border-bottom-button no-style-button ${
+                activeButton === "signIn" ? "active" : ""
+              }`}
+              onClick={() => handleButtonClick("signIn")}
+            >
+              Sign In
+            </button>
+            <button
+              className={`border-bottom-button no-style-button ${
+                activeButton === "joinIn" ? "active" : ""
+              }`}
+              onClick={() => handleButtonClick("joinIn")}
+            >
+              Join In
+            </button>
+          </div>
+          <div></div>
+          <div></div>
+          <p></p>
 
-            <form>
-              <input
-                type="email "
-                placeholder="Email"
-                className="inputStyle form-control"
-              />
+          <form>
+            <input
+              type="email "
+              placeholder="Email"
+              className="inputStyle form-control"
+            />
+            <div className="password-input-container">
               <input
                 type="password"
                 placeholder="Password"
-                className=" form-control inputStyle"
+                className="form-control inputStyle"
               />
-              <div className="d-flex justify-content-around">
-                <input type="checkbox" />
-                Remember me
-                <a href="">Forgot password ?</a>
+              <FaEyeSlash className="eye-icon" />
+            </div>
+            <p className="text-center">Connect With Separator</p>
+            <div className="d-flex justify-content-between my-4">
+              <div className="form-group ">
+                <input type="checkbox" value="Remember me" />
+                <span className="mx-2">Remember me</span>
               </div>
-              <button type="submit" className="w-25">
-                Continue
-              </button>
-            </form>
-          </div>
+              <div className="form-group ">
+                <FaLock />
+                <a href="" className="style-none">
+                  Forgot password ?
+                </a>
+              </div>
+            </div>
+            <button
+              type="submit"
+              className="form-control inputStyle border-black"
+            >
+              Continue
+            </button>
+          </form>
         </div>
       </div>
     </>

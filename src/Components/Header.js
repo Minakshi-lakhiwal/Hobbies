@@ -12,11 +12,11 @@ import ButtonCom from "./ButtonCom";
 function Header() {
   return (
     <div className="">
-      <div className="navbar d-flex justify-content-xl-around">
+      <div className="navbar d-flex justify-content-sm-around w-100">
         <div className="">
           <img src={logo} alt="logo" width={200} />
         </div>
-        <div className="mx-5 w-25 bg-light rounded-3 border border-1 border-light">
+        <div className="mx-5 w-25 ">
           <div className="input-group">
             <input
               type="text"

@@ -36,10 +36,3 @@
     transform: rotate(360deg);
   }
 } */
-.inputStyle{
-  border:"1px solid #8064A2";
-  background-color:"#fff";
-  color: "#8064A2";
-  padding: "10px 32px";
-  border-radius: "8px";
-};
