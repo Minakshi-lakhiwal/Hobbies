@@ -36,3 +36,279 @@
     transform: rotate(360deg);
   }
 } */
+:root {
+  --primary-color: #8064A2;
+  --secondary-color: #0096C8;
+  --purple-3:#CCC1DA;
+ /* --Grey-Lighter:#F8F9FA; */
+ --Grey-Lighter:#EBEDF0;
+ /* --Grey-Hover:#EBEDF0; */
+ --Grey-Hover:#fff;
+ --bg:#F7F5F9;
+ --Grey-white:#fff;
+ --Grey-Light:#CED4DA;
+ --Blue-2:#F7FDFF;
+ --Purple-2:#CCC1DA;
+}
+.search-border{
+  border: 1px solid var(--Grey-Lighter);
+}
+.inputStyle {
+  border: 1px solid #8064A2;
+  background-color: var(--bg);
+  padding: 10px 32px;
+  border-radius:8px;
+}
+.inputStyle:hover{
+  box-shadow: none; 
+  border: 1px solid #8064A2;
+}
+.form-control{
+  margin-bottom:16px;
+  box-shadow: none;
+  transition: none;
+}
+
+.text-center{
+  align-items: center;
+}
+/* Styles to remove default button styles */
+.no-style-button {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+.border-bottom-button {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 2px solid transparent; 
+  transition: border-color 0.3s ease-in-out; 
+}
+
+.border-bottom-button.active {
+  border-bottom-color: #8064A2;
+}
+.style-none{
+  text-decoration: none;
+  color:black;
+}
+/* CSS for PasswordInput component */
+.password-input-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.input-border{
+  border: 1px solid var(--Grey-Lighter);
+  background-color: var(--Grey-Hover);
+  color: #8064A2;
+  padding: 10px 32px;
+  border-radius:8px;
+}
+.input-border:hover{
+  box-shadow:none; 
+  border: 1px solid var(--Grey-Lighter);
+}
+.home-page{
+  background-color:var(--bg);
+}
+.btn-input-container {
+  position: relative;
+}
+
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.social-icon.facebook{
+  color: #1877F2;
+}
+.icon-style{
+  color: #8064A2;
+  width: 24px;
+  height: 24px;
+}
+.expand-arrow{
+  color: #939CA3;
+}
+.custom-card-style{
+  width: 550px;
+height: 250px;
+flex-shrink: 0; 
+border: 1px solid var(--Grey-Light);
+background: var(--Grey-white);
+text-wrap:wrap;
+}
+.container{
+  align-items: center;
+  margin-top: 100px;
+}
+.div-test-1{
+  background: var(--Blue-2);
+height: 484px;
+padding: 100px;
+align-items: center;
+
+}
+.custom-border{
+  border: 1px solid var(--Grey-Light);
+  background-color: var(--Grey-Hover);
+}
+.div-test-2{
+  background-color: var(--Grey-white);
+  height: 484px;
+ padding: 100px;
+ align-items: center; 
+}
+.audio-box{
+  border-radius: 8px;
+  background: var(--Purple-2);
+}
+.progress-container {
+  width: 50%;
+  background-color: #fff;
+  height: 2px;
+  position: relative;
+}
+
+.progress-bar {
+  background-color:var(--primary-color); /* Set your desired progress bar color */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:0%; /* Adjust the width based on the progress */
+  border-top-left-radius:50%;
+  border-bottom-left-radius: 50%;
+  z-index: 1;
+}
+
+.controller{
+  background-color:var(--primary-color); /* Set your desired controller color */
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -4px;
+   /* Adjust the positioning based on the height of the progress bar */
+  z-index:2;
+  left: 0;
+  border-radius:50%;
+}
+.player-icon{
+  width: 40px;
+  height: 40px;
+}
+.other-testimonial{
+  border-radius: 8px;
+background-color: var(--bg);
+}
+.social-icons{
+  color: #6D747A;
+  width:20px;
+  height:20px;
+}
+
+/* variables.css */
+.navbar{
+height: 80px;
+flex-shrink: 0;
+box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
+}
+/* Add this style to your CSS file or in your component's style tag */
+
+.custom-select {
+  border: none;
+  outline: none;
+  appearance: none;
+  background-color: transparent; /* or set your desired background color */
+  padding: 0; /* adjust as needed */
+  margin: 0; /* adjust as needed */
+}
+.buttonStyle {
+  background-color:var(--primary-color);
+  color: white;
+  cursor: pointer;
+  height: fit-content;
+}
+.buttonStyle:hover {
+  background-color: var(--purple-3); 
+}
+.input-group .form-control {
+  /* or any other border color you prefer */
+  box-shadow: none; 
+  border-radius: 8px;
+  background:var(--Grey-Lighter);
+  border-color: var(--Grey-Hover);/* Remove the box-shadow on hover */
+}
+.footer-end{
+  background-color: var(--bg);
+  height: 78px;
+  text-align: center;
+
+}
+.footer-end p {
+  display: inline-block;
+}
+.btn{
+  color: black;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+.btn.show{
+  color: black;
+  background-color: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+/* Reset default styles */
+.btn:hover{
+  color: black;
+  background-color: #fff;
+}
+/* .btn::after{
+  color: black;
+  background-color: #fff;
+}
+.btn:active{
+  color: black;
+  background-color: #fff;
+} */
+:not(.btn-check)+.btn:active{
+  color: black;
+  background-color: #fff;
+}
+.custom-toggle {
+  /* Hide the default arrow */
+  background-image: none !important;
+}
+.custom-toggle::after {
+  /* Hide the default arrow */
+  content: none !important;
+}

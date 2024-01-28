@@ -2,15 +2,20 @@
     --primary-color: #8064A2;
     --secondary-color: #0096C8;
     --purple-3:#CCC1DA;
-   --Grey-Lighter:#F8F9FA;
-   --Grey-Hover:#EBEDF0;
+   /* --Grey-Lighter:#F8F9FA; */
+   --Grey-Lighter:#EBEDF0;
+   /* --Grey-Hover:#EBEDF0; */
+   --Grey-Hover:#fff;
+   --bg:#F7F5F9;
+  }
+  .search-border{
+    border: 1px solid var(--Grey-Lighter);
   }
   .inputStyle {
     border: 1px solid #8064A2;
-    background-color: #fff;
-    color: #8064A2;
+    background-color: var(--bg);
     padding: 10px 32px;
-    border-radius: 8px;
+    border-radius:8px;
   }
   .inputStyle:hover{
     box-shadow: none; 
@@ -18,7 +23,10 @@
   }
  .form-control{
     margin-bottom:16px;
+    box-shadow: none;
+    transition: none;
  }
+ 
  .text-center{
     align-items: center;
  }
@@ -67,4 +75,40 @@
     transform: translateY(-50%);
     cursor: pointer;
   }
+  .input-border{
+    border: 1px solid var(--Grey-Lighter);
+    background-color: var(--Grey-Hover);
+    color: #8064A2;
+    padding: 10px 32px;
+    border-radius:8px;
+  }
+  .input-border:hover{
+    box-shadow:none; 
+    border: 1px solid var(--Grey-Lighter);
+  }
+  .home-page{
+    background-color:var(--bg);
+  }
+  .btn-input-container {
+    position: relative;
+  }
   
+  .social-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .social-icon.facebook{
+    color: #1877F2;
+  }
+  .icon-style{
+    color: #8064A2;
+    width: 24px;
+    height: 24px;
+  }
+  .expand-arrow{
+    color: #939CA3;
+  }
+ 

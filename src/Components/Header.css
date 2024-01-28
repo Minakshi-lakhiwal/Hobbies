@@ -4,8 +4,8 @@
     --primary-color: #8064A2;
     --secondary-color: #0096C8;
     --purple-3:#CCC1DA;
-   --Grey-Lighter:#F8F9FA;
-   --Grey-Hover:#EBEDF0;
+    --Grey-Lighter:#EBEDF0;
+    --Grey-Hover:#F8F9FA;
   }
 .navbar{
 height: 80px;
@@ -36,5 +36,8 @@ box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.08);
     box-shadow: none; 
     border-radius: 8px;
     background:var(--Grey-Lighter);
-border-color: var(--Grey-Hover);/* Remove the box-shadow on hover */
+    border-color: var(--Grey-Hover);/* Remove the box-shadow on hover */
+  }
+  .custom-input{
+    width: 200px;
   }

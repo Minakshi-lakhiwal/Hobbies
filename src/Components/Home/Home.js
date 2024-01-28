@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import "./home.css";
+//import "./home.css";
+import "../../App.css";
 import home1 from "../../assets/home1.png";
 import home2 from "../../assets/Home2.png";
-import { FaLock } from "react-icons/fa";
-import { FaEyeSlash } from "react-icons/fa";
+
+import SignIn from "./SignIn";
+import JoinIn from "./JoinIn";
 const Home = () => {
   const [activeButton, setActiveButton] = useState("signIn");
 
@@ -12,7 +14,7 @@ const Home = () => {
     setActiveButton(buttonType);
   };
   return (
-    <>
+    <div className="home-page w-100 vh-100">
       <div className="d-flex justify-content-between">
         <div className="left pt-5  col-6">
           <h2>
@@ -57,22 +59,36 @@ const Home = () => {
           <div></div>
           <div></div>
           <p></p>
+          {activeButton === "signIn" ? <SignIn /> : <JoinIn />}
+          {/* <form>
+            <div className="btn-input-container">
+              <FcGoogle className="social-icon" />
 
-          <form>
+              <button className="form-control inputStyle text-black">
+                Continue with Google
+              </button>
+            </div>
+            <div className="btn-input-container">
+              <FaFacebook className="social-icon facebook" />
+              <button className="form-control inputStyle text-black ">
+                Login With Other Accounts
+              </button>
+            </div>
+            <p className="text-center">Connect With Separator</p>
             <input
               type="email "
               placeholder="Email"
-              className="inputStyle form-control"
+              className=" form-control input-border input-group"
             />
             <div className="password-input-container">
               <input
                 type="password"
                 placeholder="Password"
-                className="form-control inputStyle"
+                className="form-control inputStyle input-border input-group"
               />
               <FaEyeSlash className="eye-icon" />
             </div>
-            <p className="text-center">Connect With Separator</p>
+
             <div className="d-flex justify-content-between my-4">
               <div className="form-group ">
                 <input type="checkbox" value="Remember me" />
@@ -87,14 +103,14 @@ const Home = () => {
             </div>
             <button
               type="submit"
-              className="form-control inputStyle border-black"
+              className="form-control inputStyle border-black text-black"
             >
               Continue
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default Home;
